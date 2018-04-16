@@ -1,0 +1,32 @@
+<html>
+
+<body>
+
+<script>
+
+var a = [[1,2,4],
+	 [5,0,1],
+	 [-6,2,-3]];
+var result1 = 0;
+var result2 = 0;
+
+for(i = 0 , j = 0 ; i <= 2 , j <= 2; i++ , j++)
+
+{
+	result1 = a[i][j] + result1;
+
+}
+
+for(i=0 , j = 2 ; i <= 2 , j >= 0 ; i++ , j--)
+
+{
+	result2 = a[i][j] + result2;
+}
+
+console.log(Math.abs(result1 - result2));
+
+</script>
+
+</body>
+
+</html>
